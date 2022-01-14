@@ -14,7 +14,6 @@ sap.ui.define([
             _onPress: function () {
                 /*sap.m.MessageToast.show('Lorem \n ipsum \n dolor sit amet', {
                     duration: 3000, 
-                    width: "15rem", // default max width supported 
                 });*/
             }
         });

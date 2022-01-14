@@ -13,9 +13,12 @@
     "eslint-plugin-ui5": "^0.1.0"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.14.1",
+    "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
+    "@sap/ux-ui5-fe-mockserver-middleware": "1",
     "@sap/ux-ui5-tooling": "1",
-    "@sap/ux-ui5-fe-mockserver-middleware": "1"
+    "@sapui5/ts-types": "^1.96.3",
+    "@ui5/cli": "^2.14.1",
+    "eslint": "^8.6.0"
   },
   "scripts": {
     "start": "fiori run --open 'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'",
