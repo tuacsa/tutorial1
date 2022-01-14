@@ -8,8 +8,9 @@
         <App id="app">
             <pages>
                 <Page id="page" title="{i18n>title}">
-                    <!---<Button text="Mi boton" press="_onPress"></Button>--->
-                    <content />
+                    <content>
+                        <!---<Button text="Mi boton" press="_onPress"></Button>-->
+                    </content>
                 </Page>
             </pages>
         </App>
