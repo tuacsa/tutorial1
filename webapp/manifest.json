@@ -56,7 +56,7 @@
           "bundleName": "accenture.tutorial1.ui5.tutorial1.i18n.i18n"
         }
       },
-      "": {
+      "hola": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {

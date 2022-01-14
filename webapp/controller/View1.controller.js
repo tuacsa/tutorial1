@@ -9,7 +9,13 @@ sap.ui.define([
 
         return Controller.extend("accenture.tutorial1.ui5.tutorial1.controller.View1", {
             onInit: function () {
+            },
 
+            _onPress: function () {
+                /*sap.m.MessageToast.show('Lorem \n ipsum \n dolor sit amet', {
+                    duration: 3000, 
+                    width: "15rem", // default max width supported 
+                });*/
             }
         });
     });

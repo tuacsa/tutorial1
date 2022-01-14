@@ -1,89 +1,90 @@
 {
-    "inputs": [
-        {
-            "id": "UI5VersionV4",
-            "type": "command",
-            "command": "sap.ux.appGenerator.ui5VersionV4"
-        }
-    ],
-    "configurations": [
-        {
-            "name": "Start tutorial1",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npx",
-            "cwd": "${workspaceFolder}/tutorial1",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--open",
-                "'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/tutorial1/tutorial1\"}"
-            }
-        },
-        {
-            "name": "Start tutorial1 Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/tutorial1",
-            "runtimeExecutable": "npx",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--config",
-                "./ui5-mock.yaml",
-                "--open",
-                "'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/tutorial1/tutorial1\"}"
-            }
-        },
-        {
-            "name": "Start tutorial1 Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/tutorial1",
-            "runtimeExecutable": "npx",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--config",
-                "./ui5-local.yaml",
-                "--open",
-                "'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/tutorial1/tutorial1\"}"
-            }
-        }
-    ],
-    "compounds": []
+  "inputs": [
+    {
+      "id": "UI5VersionV4",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5VersionV4"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Start tutorial1",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "cwd": "${workspaceFolder}/tutorial1",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/tutorial1/tutorial1\"}"
+      }
+    },
+    {
+      "name": "Start tutorial1 Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/tutorial1",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/tutorial1/tutorial1\"}"
+      }
+    },
+    {
+      "name": "Start tutorial1 Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/tutorial1",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "'test/flpSandbox.html#accenturetutorial1ui5tutorial1-display'"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/tutorial1/tutorial1\"}"
+      }
+    }
+  ],
+  "compounds": [],
+  "version": "0.2.0"
 }
