@@ -14,6 +14,23 @@
                         <ComboBox items="{CitiesModel>/}"  selectedKey="{ToolsModel>/cityName}">
                             <core:Item text="{CitiesModel>name}" key="{CitiesModel>name}"/>
                         </ComboBox>
+                        <!--Table items="{CitiesModel>/}">
+                            <columns>
+                                <Column >
+                                    <header>
+                                        <Text text="Nombre"/>
+                                    </header>
+                                    <footer/>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{CitiesModel>name}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table-->
                     </content>
                 </Page>
             </pages>
