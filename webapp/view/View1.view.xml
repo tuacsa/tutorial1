@@ -3,6 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
 >
     <Shell id="shell">
         <App id="app">
@@ -10,6 +11,9 @@
                 <Page id="page" title="{i18n>title}">
                     <content>
                         <Button text="Hello World!" press="onSayHello"></Button>
+                        <ComboBox items="{CitiesModel>/}"  selectedKey="{ToolsModel>/cityName}">
+                            <core:Item text="{CitiesModel>name}" key="{CitiesModel>name}"/>
+                        </ComboBox>
                     </content>
                 </Page>
             </pages>
