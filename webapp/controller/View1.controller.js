@@ -11,10 +11,23 @@ sap.ui.define([
             onInit: function () {
             },
 
-            _onPress: function () {
-                /*sap.m.MessageToast.show('Lorem \n ipsum \n dolor sit amet', {
+            onSayHello: function () {
+                sap.m.MessageToast.show("Hello World!", {
                     duration: 3000, 
-                });*/
+                });
+
+
+                /*if( !this._dialogSayHello ) {
+                    this._dialogSayHello = sap.ui.xmlfragment("idSayHelloDialog", "accenture.tutorial1.ui5.tutorial1.fragment.sayHelloDialog", this);
+                    this.getView().addDependent(this._dialogSayHello);
+                }
+                this._dialogSayHello.open();*/
+            },
+
+            onClose: function () {
+                if ( this._dialogSayHello ) {
+                    this._dialogSayHello.close()
+                }
             }
         });
     });

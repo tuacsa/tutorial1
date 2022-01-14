@@ -9,7 +9,7 @@
             <pages>
                 <Page id="page" title="{i18n>title}">
                     <content>
-                        <!---<Button text="Mi boton" press="_onPress"></Button>-->
+                        <Button text="Hello World!" press="onSayHello"></Button>
                     </content>
                 </Page>
             </pages>
