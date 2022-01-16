@@ -1,23 +1,30 @@
 [
     {
-        "name": "Madrid"
+        "name": "Madrid",
+        "population": 1.85
     },
     {
-        "name": "Londres"
+        "name": "Londres",
+        "population": 4.3
     },
     {
-        "name": "Berlin"
+        "name": "Berlin",
+        "population": 1.55
     },
     {
-        "name": "Paris"
+        "name": "Paris",
+        "population": 3.96
     },
     {
-        "name": "Lisboa"
+        "name": "Lisboa",
+        "population": 1.5
     },
     {
-        "name": "Roma"
+        "name": "Roma",
+        "population": 2.33
     },
     {
-        "name": "Atenas"
+        "name": "Atenas",
+        "population": 0.98
     }
 ]

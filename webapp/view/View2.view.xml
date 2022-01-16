@@ -13,10 +13,18 @@
                 <table:columns>
                     <table:Column
                         id="name"
-                        sortProperty="name">
+                        sortProperty="name" filterProperty="name">
                         <Label text="City Name" />
                         <table:template>
                             <Text text="{CitiesModel>name}" wrapping="false" />
+                        </table:template>
+                    </table:Column>
+                    <table:Column
+                        id="population"
+                        sortProperty="population" filterProperty="population">
+                        <Label text="Population" />
+                        <table:template>
+                            <Text text="{CitiesModel>population}" wrapping="false" />
                         </table:template>
                     </table:Column>
                 </table:columns>
