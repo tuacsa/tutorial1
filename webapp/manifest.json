@@ -69,6 +69,11 @@
       }
     },
     "resources": {
+      "js": [
+        {
+          "uri": "utils/libs/Lodash.min.js"
+        }
+      ],
       "css": [
         {
           "uri": "css/style.css"
