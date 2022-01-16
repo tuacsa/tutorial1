@@ -1,0 +1,43 @@
+<mvc:View
+    controllerName="accenture.tutorial1.ui5.tutorial1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:table="sap.ui.table"
+>
+    
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <table:Table rows="{CitiesModel>/}">
+                <table:columns>
+                    <table:Column
+                        id="name"
+                        sortProperty="name">
+                        <Label text="City Name" />
+                        <table:template>
+                            <Text text="{CitiesModel>name}" wrapping="false" />
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+            </table:Table>
+            <!--Table items="{CitiesModel>/}">
+                <columns>
+                    <Column >
+                        <header>
+                            <Text text="Nombre"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{CitiesModel>name}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table-->
+        </content>
+    </Page>
+</mvc:View>

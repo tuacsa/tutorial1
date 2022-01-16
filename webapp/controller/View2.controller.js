@@ -8,7 +8,7 @@ sap.ui.define([
     function (Controller, JSONModel) {
         "use strict";
 
-        return Controller.extend("accenture.tutorial1.ui5.tutorial1.controller.View1", {
+        return Controller.extend("accenture.tutorial1.ui5.tutorial1.controller.View2", {
             onInit: function () {
                 const oCitiesModel = new JSONModel([
                     {
@@ -35,31 +35,6 @@ sap.ui.define([
                 ]);
                 //oCitiesModel.loadData("../model/cities.json");
                 this.getView().setModel(oCitiesModel, "CitiesModel");
-            },
-
-            onSayHello: function () {
-
-                /*sap.m.MessageToast.show("Hello World!", {
-                    duration: 3000, 
-                });*/
-
-
-                if( !this._dialogSayHello ) {
-                    this._dialogSayHello = sap.ui.xmlfragment("idSayHelloDialog", "accenture.tutorial1.ui5.tutorial1.fragment.sayHelloDialog", this);
-                    this.getView().addDependent(this._dialogSayHello);
-                }
-                this._dialogSayHello.open();
-            },
-
-            onClose: function () {
-                if ( this._dialogSayHello ) {
-                    this._dialogSayHello.close()
-                }
-            },
-
-            onNavigateToView2: function () {
-                var oRouter = this.getOwnerComponent().getRouter();
-			    oRouter.navTo("RouteView2");
             }
         });
     });
