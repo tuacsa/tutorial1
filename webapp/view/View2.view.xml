@@ -29,7 +29,7 @@
                     </table:Column>
                 </table:columns>
             </table:Table-->
-            <Table items="{CitiesModel>/}">
+            <Table items="{/Products}">
                 <columns>
                     <Column >
                         <header>
@@ -41,7 +41,7 @@
                 <items>
                     <ColumnListItem type="Active" press="onPress">
                         <cells>
-                            <Text text="{CitiesModel>name}"/>
+                            <Text text="{ProductName}"/>
                         </cells>
                     </ColumnListItem>
                 </items>
