@@ -30,13 +30,13 @@ server:
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
-          - path: /V4
+          - path: /V2
             url: https://services.odata.org
     - name: sap-fe-mockserver
       beforeMiddleware: fiori-tools-proxy
       configuration:
         service:
-          urlBasePath: /V4/Northwind/Northwind.svc
+          urlBasePath: /V2/Northwind/Northwind.svc
           name: ''
           metadataXmlPath: ./webapp/localService/metadata.xml
           mockdataRootPath: ./webapp/localService/data

@@ -9,7 +9,7 @@
     
     <Page id="page" title="{i18n>title}">
         <content>
-            <table:Table rows="{CitiesModel>/}">
+            <!--table:Table rows="{CitiesModel>/}">
                 <table:columns>
                     <table:Column
                         id="name"
@@ -28,8 +28,8 @@
                         </table:template>
                     </table:Column>
                 </table:columns>
-            </table:Table>
-            <!--Table items="{CitiesModel>/}">
+            </table:Table-->
+            <Table items="{CitiesModel>/}">
                 <columns>
                     <Column >
                         <header>
@@ -39,13 +39,13 @@
                     </Column>
                 </columns>
                 <items>
-                    <ColumnListItem>
+                    <ColumnListItem type="Active" press="onPress">
                         <cells>
                             <Text text="{CitiesModel>name}"/>
                         </cells>
                     </ColumnListItem>
                 </items>
-            </Table-->
+            </Table>
         </content>
     </Page>
 </mvc:View>

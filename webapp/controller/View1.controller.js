@@ -40,11 +40,12 @@ sap.ui.define([
             },
 
             onSayHello: function (oEvent) {
-                
+                /*
                 sap.m.MessageToast.show("Hello World!", {
                     duration: 3000, 
                 });
-                
+                */
+
                 /*
                 if (!Validator.isNotEmpty(this.getView().byId("city-combobox").getSelectedKey())) {
                     sap.m.MessageToast.show("Select a City", {
@@ -59,7 +60,7 @@ sap.ui.define([
                 }
                 this._dialogSayHello.open();
                 */
-                /*
+                
                 if (!Validator.isNotEmpty(this.getView().byId("city-combobox").getSelectedKey())) {
                     sap.m.MessageToast.show("Select a City", {
                         duration: 3000, 
@@ -67,12 +68,12 @@ sap.ui.define([
                     return;
                 }
                 Common.openDialogFromFragment(this, "idSayHelloDialog", "accenture.tutorial1.ui5.tutorial1.fragment.sayHelloDialog");
-                */
+                
             },
             
             onClose: function () {
                 if ( this._dialogSayHello ) {
-                    this._dialogSayHello.close()
+                    this._dialogSayHello.close();
                 }
             },
             

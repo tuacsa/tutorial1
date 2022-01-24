@@ -13,6 +13,12 @@ sap.ui.define([
                 this.getOwnerComponent().setModel(new JSONModel(), "ToolsModel");
                 const oToolsModel = this.getOwnerComponent().getModel("ToolsModel");
                 oToolsModel.setProperty("/name", "Curso Fiori");
+                var oModelNorthWind = this.getOwnerComponent().getModel();
+                oModelNorthWind.read("/Products", {
+                    success: function (oData) {
+                        console.log(oData);
+                    }
+                });
             }
         });
     });

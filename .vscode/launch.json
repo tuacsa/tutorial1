@@ -1,9 +1,9 @@
 {
   "inputs": [
     {
-      "id": "UI5VersionV4",
+      "id": "UI5VersionV2",
       "type": "command",
-      "command": "sap.ux.appGenerator.ui5VersionV4"
+      "command": "sap.ux.appGenerator.ui5VersionV2"
     }
   ],
   "configurations": [

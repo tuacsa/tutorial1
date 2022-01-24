@@ -17,7 +17,7 @@ server:
           url: https://ui5.sap.com
           version: '' # The UI5 version, for instance, 1.78.1. Empty string means latest version
         backend:
-          - path: /V4
+          - path: /V2
             url: https://services.odata.org
     - name: fiori-tools-appreload
       afterMiddleware: compression
@@ -29,7 +29,7 @@ server:
       beforeMiddleware: fiori-tools-proxy
       configuration:
         service:
-          urlBasePath: /V4/Northwind/Northwind.svc
+          urlBasePath: /V2/Northwind/Northwind.svc
           name: ''
           metadataXmlPath: ./webapp/localService/metadata.xml
           mockdataRootPath: ./webapp/localService/data
