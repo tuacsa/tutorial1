@@ -1,0 +1,40 @@
+<mvc:View
+    controllerName="accenture.tutorial1.ui5.tutorial1.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:table="sap.ui.table"
+    xmlns:form="sap.ui.layout.form"
+>
+    
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <form:SimpleForm
+                maxContainerCols="2"
+                editable="false"
+                layout="ResponsiveGridLayout"
+                labelSpanL="12"
+                labelSpanM="12"
+                emptySpanL="0"
+                emptySpanM="0"
+                columnsL="1"
+                columnsM="1">
+                <form:content>
+                    <Label text="Product Name"/>
+                    <Text text="{DetailModel>/ProductName}"/>
+                    <Label text="Product ID"/>
+                    <Text text="{DetailModel>/ProductID}"/>
+                    <Label text="Category ID"/>
+                    <Text text="{DetailModel>/Category/CategoryID}"/>
+                    <Label text="Discontinued"/>
+                    <Text text="{DetailModel>/Discontinued}"/>
+                    <Label text="Unit Price"/>
+                    <Text text="{DetailModel>/UnitPrice}"/>
+                    <Image src="data:image/bmp;base64,{= ${DetailModel>/Category/Picture}.substr(104)}" 
+                        width="300px" height="300px" />
+                </form:content>
+            </form:SimpleForm>    
+        </content>
+    </Page>
+</mvc:View>
